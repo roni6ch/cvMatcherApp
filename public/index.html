@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>CV Matcher</title>
+            <meta charset = "UTF-8">
+    </head>
+    <body>
+        <div id="wrapper" style="text-align: center;" > 
+            <header>
+                <h1>Job Seeker</h1>
+            </header>
+            <form action="http://localhost:8000/InsertJobSeeker" method="get">
+                <p><label>Name<input type="text" name="person_name" value="" placeholder="Your Name" required></label></p>
+				<hr>
+                <p><label>Family<input type="text" name="family_name" value="" placeholder="Family name" required></label></p>
+                <hr>
+				 <label>Sector
+                <select name="sector">
+                <option value="software_engineering" selected>Software Engineering</option>
+                <option value="industrial_engineering_and_management">Industrial Engineering and Management</option> 
+                <option value="electrical_engineering">Electrical Engineering</option>
+                <option value="structural_engineering">Structural Engineering</option>
+				<option value="mechanical_engineering">Mechanical Engineering</option>
+                </select><br><br></label>
+				<hr>
+				<p><label>Sub Sector<input type="text" name="sub_sector" value="" placeholder="Engineering"></label></p>
+				<hr>
+				<p>Location
+				<label><input type="checkbox" name="location[]" value="center">Center <br></label>
+                <label><input type="checkbox" name="location[]" value="north" checked> North <br></label>
+                <label><input type="checkbox" name="location[]" value="east"> East <br></label>
+                <label><input type="checkbox" name="location[]" value="south">South <br><br></label>
+				<hr>
+				<label>Academy
+				<select name="academy">
+                <option value="shenkar" selected>Shenkar</option>
+                <option value="bgu">BGU</option> 
+                <option value="thechnion">Thecnion</option>
+                <option value="tlv">TLV</option>
+                </select><br><br></label>
+				<hr>
+				<label>Candidate Type
+				<select name="candidate_type">
+                <option value="student" selected>Student</option>
+				<option value="bechlor" >Bechlor</option>
+                <option value="professor">Professor</option> 
+                <option value="doctor">Doctor</option>
+                <option value="master">Master</option>
+                </select><br><br></label>
+				<hr>
+				<label>Candidate Position
+				<select name="position">
+                <option value="non_experience" selected>Non Experience Student</option>
+				<option value="mothers" selected>Mother</option>
+				<option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                </select><br><br></label>
+				<hr>
+				
+				 <h4>Scope of Position</h4>
+                <label> Full Time <input type="checkbox" name="full_time" ></label> 
+                <label> Part Time <input type="checkbox" name="part_time" ></label>
+				<label> Per Hour <input type="checkbox" name="per_hour" ></label> 
+                <label> Freelancer <input type="checkbox" name="freelancer" ></label>
+				<br><br>
+				<hr>
+				<label>years: 
+				<select name="lang1years">
+                <option value="0" selected>0</option>
+				<option value="2" selected>0-2</option>
+                <option value="4">2-4</option> 
+                <option value="5">5+</option>
+                </select>
+				Lang1<textarea name="experience[]" rows="1" cols="30"></textarea></label></p>
+				<label>years: 
+				<select name="lang2years">
+                <option value="0" selected>0</option>
+				<option value="2" selected>0-2</option>
+                <option value="4">2-4</option> 
+                <option value="5">5+</option>
+                </select>
+				Lang2<textarea name="experience[]" rows="1" cols="30"></textarea></label></p>
+				<label>years: 
+				<select name="lang3years">
+                <option value="0" selected>0</option>
+				<option value="2" selected>0-2</option>
+                <option value="4">2-4</option> 
+                <option value="5">5+</option>
+                </select>
+				Lang3<textarea name="experience[]" rows="1" cols="30"></textarea></label></p>
+				<hr>
+              <button>Preview CV</button>
+			   <input type="submit" target="_blank" value="Apply"></input>
+            </form>
+        </div>
+    </body>
+</html>
